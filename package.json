@@ -1,0 +1,14 @@
+{
+  "name": "time-paradox-train",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "description": "3D browser multiplayer social deduction game prototype",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node tests/geometry-test.mjs && node tests/smoke-test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

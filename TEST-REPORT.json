@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "version": "1.2.0",
+  "date": "2026-07-26",
+  "commands": [
+    "node --check server.mjs",
+    "node --check public/src/game.js",
+    "npm test",
+    "sh -n start-linux-mac.sh"
+  ],
+  "checks": [
+    "cube/sphere/cylinder outward triangle winding",
+    "health endpoint and static file serving",
+    "HTML and JavaScript DOM reference consistency",
+    "collision, live balance UI, reconnect, and connection diagnostics hooks",
+    "WebSocket handshake and room create/join",
+    "session resume after disconnect",
+    "task requirement re-scaling after disconnect",
+    "solo task completion and universe transition",
+    "crew/parasite role assignment",
+    "sabotage broadcast",
+    "elimination and win state",
+    "Render Blueprint presence and localhost launcher shell syntax"
+  ],
+  "visual_validation": {
+    "status": "not_run_in_container",
+    "reason": "The container Chromium policy/EGL setup blocked reliable WebGL2 rendering. Geometry winding is covered by automated tests; final visual validation should be performed in desktop Chrome or Edge."
+  },
+  "limitations": [
+    "Windows batch launcher was reviewed but could not be executed inside the Linux container.",
+    "Render deployment was prepared but not published because no GitHub/Render account access was provided."
+  ]
+}
