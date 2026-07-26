@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "version": "1.2.1",
+  "date": "2026-07-26",
+  "runtime": {
+    "node": "v22.16.0",
+    "npm": "10.9.2"
+  },
+  "checks": [
+    "installation verifier detects required repo/static files",
+    "server JavaScript syntax",
+    "health endpoint reports staticReady=true",
+    "root route serves public/index.html",
+    "one-level nested public directory recovery",
+    "cube/sphere/cylinder outward triangle orientation",
+    "WebSocket handshake and hello",
+    "room create/join and session resume",
+    "disconnect task re-scaling",
+    "solo task completion and universe transition",
+    "parasite assignment, sabotage, elimination and win state"
+  ],
+  "limitations": [
+    "Windows PowerShell launcher was code-reviewed but cannot be executed in the Linux test container.",
+    "The user-owned Render deployment could not be queried from the container because external DNS resolution was unavailable."
+  ]
+}

@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: chronorail-parazit-protokolu
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run verify && npm test
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: RECONNECT_GRACE_MS
+        value: 30000
